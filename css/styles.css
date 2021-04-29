@@ -43,7 +43,7 @@ img {
 }
 
 .container {
-  width: 1110px;
+  width: 1140px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -240,4 +240,77 @@ img {
 
   color: var(--subtitle-color);
 }
-/* Текст для изменений */
+
+.works {
+  padding-top: 100px;
+  padding-bottom: 85px;
+  background: linear-gradient(180deg, #504dc2 50%, #ffffff 50%);
+}
+
+.works-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.works-title {
+  max-width: 540px;
+  color: var(--primary-title-color);
+}
+
+.works-list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+  flex-wrap: wrap;
+  padding-bottom: 85px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.works-item {
+  /* width: calc((100% - 60px) / 3); */
+  width: 350px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.works-img,
+.work-subtitle,
+.works-txt {
+  margin-bottom: 30px;
+}
+
+.projects {
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+
+.projects-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.projects-txt {
+  max-width: 730px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  margin-bottom: 50px;
+}
+
+.projects-item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.projects-button {
+  margin: 0 auto;
+}
