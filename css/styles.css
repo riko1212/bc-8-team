@@ -82,7 +82,17 @@ img {
 .hero {
   padding-top: 220px;
   padding-bottom: 335px;
-  background-color: var(--secondary-title-color);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url('../images/mainbg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .section-title {
@@ -177,6 +187,54 @@ img {
 
 .services-item {
   width: 353px;
+  display: flex;
+}
+
+.services-icon {
+  fill: var(--accent-color);
+}
+
+.circle {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-circle {
+  width: 90px;
+  height: 90px;
+  border: 1px solid var(--accent-color);
+}
+
+.inner-circle:hover,
+.inner-circle:focus,
+.inner-circle:hover .services-icon,
+.inner-circle:focus .services-icon {
+  background-color: var(--accent-color);
+  fill: #fff;
+}
+
+.outer-circle {
+  width: 110px;
+  height: 110px;
+  border: 1px solid #e0e0e0;
+  flex-shrink: 0;
+  margin-right: 17px;
+}
+
+.outer-circle:hover {
+  background-color: gray;
+}
+
+.outer-circle:hover .inner-circle,
+.outer-circle:hover svg {
+  background-color: var(--accent-color);
+  fill: #fff;
+}
+
+.services-item-content {
+  margin-top: 46px;
 }
 
 .services-list-title {
@@ -228,6 +286,12 @@ img {
 .about-project-list {
   display: flex;
   justify-content: space-evenly;
+}
+
+.about-item-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .about-project-item {
