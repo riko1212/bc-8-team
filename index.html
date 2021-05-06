@@ -21,7 +21,7 @@
       <div class="container">
         <ul class="header-list">
           <li><a href="" class="header-link link">Главная</a></li>
-          <li><a href="" class="header-link link">Наши проекты</a></li>
+          <li><a href="" class="header-link active link">Наши проекты</a></li>
           <li><a href="" class="header-link link">Услуги</a></li>
           <li><a href="" class="header-link link">Новости</a></li>
           <li><a href="" class="header-link link">Контакты</a></li>
@@ -35,7 +35,7 @@
       <h1 class="hero-title">
         Мы создаем легкие решения сложных задач и проблем
       </h1>
-      <button type="button" class="hero-button button">Наши проекты</button>
+      <button type="button" class="hero-button button" data-modal-open>Наши проекты</button>
     </section>
     <section class="services">
       <div class="container">
@@ -145,7 +145,7 @@
               </svg>
               <span class="about-project-number">125</span>
             </div>
-          
+
             <p class="about-project-name text">our projects</p>
           </li>
           <li class="about-project-item">
@@ -155,7 +155,7 @@
               </svg>
               <span class="about-project-number">125</span>
             </div>
-          
+
             <p class="about-project-name text">our projects</p>
           </li>
           <li class="about-project-item">
@@ -165,7 +165,7 @@
               </svg>
               <span class="about-project-number">125</span>
             </div>
-          
+
             <p class="about-project-name text">our projects</p>
           </li>
           <li class="about-project-item">
@@ -175,7 +175,7 @@
               </svg>
               <span class="about-project-number">125</span>
             </div>
-          
+
             <p class="about-project-name text">our projects</p>
           </li>
         </ul>
@@ -243,19 +243,29 @@
       </div>
 
     </section>
-    <section>
-      <h2>Видео о нашей работе</h2>
-      <p>Просто посмотрите, как мы работаем</p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/OWhpQ5yGCeQ" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+    <section class="video">
+      <div class="container">
+        <h2 class="video-title section-title">Видео о нашей работе</h2>
+        <p class="video-txt">Просто посмотрите, как мы работаем</p>
+        <div class="video-content">
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/OWhpQ5yGCeQ" title="YouTube video player"
+  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen></iframe>
+        </div>
+        
+      </div>
+
     </section>
-    <section>
-      <p>Подпишитесь на нашу рассылку</p>
-      <p>Полезные статьи, акции, новости - получите все это сейчас!</p>
-      <input type="email" placeholder="Ваш e-mail" />
-      <button type="button">Подписаться</button>
-      <p>Мы не шлем спам, и передаем никому ваши данные.</p>
+    <section class="subscribe">
+      <div class="container">
+        <h2 class="visually-hidden">Подписаться на рассылку</h2>
+        <p class="subscribe-subtitle">Подпишитесь на нашу рассылку</p>
+        <p class="subscribe-text-top text">Полезные статьи, акции, новости - получите все это сейчас!</p>
+        <input class="subscribe" type="email" placeholder="Ваш e-mail" />
+        <button type="button">Подписаться</button>
+        <p>Мы не шлем спам, и передаем никому ваши данные.</p>
+      </div>
+    
     </section>
   </main>
   <footer>
@@ -300,6 +310,14 @@
     </ul>
     <p>&#169; 2019. Все права защищены.</p>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="close-btn" data-modal-close><svg class="close-icon" width="11" height="11">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg></button>
+    </div>
+  </div>
 </body>
+<script src="./js/modal.js"></script>
 
 </html>
