@@ -1,0 +1,47 @@
+.header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  border-bottom: 1px solid rgba(161, 161, 161, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+    .header-list {
+      display: flex;
+      justify-content: flex-end;
+      .header-link {
+        display: block;
+        padding: 40px 20px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.25;
+        color: var(--secondary-text-color);
+        position: relative;
+        &.active{
+          &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            display: block;
+            background-color: #ffffff;
+            left: 0;
+            bottom: 0;
+          }
+        }
+    }
+  }
+}
+
+
+
+
+
+.header-link.active::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: #ffffff;
+  left: 0;
+  bottom: 0;
+}

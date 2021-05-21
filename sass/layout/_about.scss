@@ -1,0 +1,39 @@
+
+
+.about{
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 90px;
+        margin-bottom: 70px;
+    }
+    &-title {
+        margin-bottom: 14px;
+
+        color: var(--secondary-title-color);
+    }
+    &-text {
+        margin-bottom: 30px;
+    }
+    &-project-list {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &-item-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-project-item {
+        width: 104px;
+    }
+    &-project-number {
+        font-size: 36px;
+        line-height: 1.47;
+
+        color: var(--subtitle-color);
+    }
+}
+
